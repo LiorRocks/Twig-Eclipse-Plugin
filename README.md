@@ -3,12 +3,12 @@
 
    How to use the project?
    ________________________________________
-   (1) Create a new local Artifactory P2 repository for SNAPSHOTS/RELEASES
+   1. Create a new local Artifactory P2 repository for SNAPSHOTS/RELEASES
        Add it to the pom.xml file, in the area marked by a STEP 1 comment
-   (2) Create a new virtual Artifactory P2 repository
+   2. Create a new virtual Artifactory P2 repository
        Add to it all the urls of the repositories in the comment marked as STEP 2.
        Make sure to add all the urls.
-   (3) Run the command: mvn clean verify deploy
+   3. Run the command: mvn clean verify deploy
        This command is used to build and deploy the project as a P2 plugin to the repository
        created on step (1).
 
