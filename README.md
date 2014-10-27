@@ -1,28 +1,31 @@
-#Twig Eclipse Plugin
+	# Artifactory P2 plugin deployment sample project
+# Twig Eclipse Plugin -- sample project
 
-[![Build Status](https://ci.pdt-extensions.org/buildStatus/icon?job=Twig Eclipse Plugin)](https://ci.pdt-extensions.org/view/Plugins/job/Twig%20Eclipse%20Plugin/)
+   How to use the project?
+   ========================================
+   (1) Create a new local Artifactory P2 repository for SNAPSHOTS/RELEASES
+       Add it to the pom.xml file, in the area marked by a STEP 1 comment
+   (2) Create a new virtual Artifactory P2 repository
+       Add to it all the urls of the repositories in the comment marked as STEP 2.
+       Make sure to add all the urls.
+   (3) Run the command: mvn clean verify deploy
+       This command is used to build and deploy the project as a P2 plugin to the repository
+       created on step (1).
+
+   Explanation:
+   ________________________________________
+   * The Parent pom.xml file defines the project's component, and configures use with Artifactory
+   * Each component (plugin, feature, source) is a separate module, stored in a separate folder
+   * Each component has its own packaging type: eclipse-plugin, eclipse-feature, eclipse-repository
+   * On deploy the project will be organized by its modules
 
 
-### Requirements
+   Additional links
+   ----------------------------------------
+   (1)(2) P2 Repositories - JFrog Artifactory Wiki
+   	  https://www.jfrog.com/confluence/display/RTF/P2+Repositories
 
-- Eclipse >= 3.7.2 (aka Indigo SR2)
-- Java >= 6
-
-### INSTALLATION
-
-#### Updatesite
-
-You can choose between the stable and the nightly build. Stable version is released in sync with [PDT](https://projects.eclipse.org/projects/tools.pdt/documentation) (next scheduled release: 3.3.0 / 25 Jun 14).
-
-The nightly updatesite is build once a day automatically and published if all tests succeed. I'm using the nightly version myself for my production projects, so you can be quite
-certain that no major bugs make it into the nightly updatesite ;)
-
-If you want to use the nightly build, make sure to also add the __PDT nightly updatesite:__ [http://download.eclipse.org/tools/pdt/updates/3.3-nightly](http://download.eclipse.org/tools/pdt/updates/3.3-nightly)!
-
-
-#### Updatesite
-
-It's inside the "Text Editors / Productivity Tools" category:
-
-[http://p2-dev.pdt-extensions.org/](http://p2-dev.pdt-extensions.org/)
+   (3) Eclipse Tycho for building Eclipse Plugins and RCP applications - Tutorial
+       Author: Lars Vogel
+       http://www.vogella.com/tutorials/EclipseTycho/article.html
 
