@@ -14,10 +14,10 @@
 
    Explanation:
    ________________________________________
-   * The Parent pom.xml file defines the project's component, and configures use with Artifactory
-   * Each component (plugin, feature, source) is a separate module, stored in a separate folder
-   * Each component has its own packaging type: eclipse-plugin, eclipse-feature, eclipse-repository
-   * On deploy the project will be organized by its modules
+   - The Parent pom.xml file defines the project's component, and configures use with Artifactory
+   - Each component (plugin, feature, source) is a separate module, stored in a separate folder
+   - Each component has its own packaging type: eclipse-plugin, eclipse-feature, eclipse-repository
+   - On deploy the project will be organized by its modules
 
 
    Additional links
