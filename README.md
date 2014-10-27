@@ -1,8 +1,8 @@
-	# Artifactory P2 plugin deployment sample project
+# Artifactory P2 plugin deployment sample project
 # Twig Eclipse Plugin -- sample project
 
    How to use the project?
-   ========================================
+   ________________________________________
    (1) Create a new local Artifactory P2 repository for SNAPSHOTS/RELEASES
        Add it to the pom.xml file, in the area marked by a STEP 1 comment
    (2) Create a new virtual Artifactory P2 repository
@@ -21,7 +21,7 @@
 
 
    Additional links
-   ----------------------------------------
+   ________________________________________
    (1)(2) P2 Repositories - JFrog Artifactory Wiki
    	  https://www.jfrog.com/confluence/display/RTF/P2+Repositories
 
