@@ -22,7 +22,7 @@
 	<!-- STEP 1: Add Artifactory repositories for deployment -->
 	<distributionManagement>
 	  <repository>
-            <id>lior-Latitude-E5540</id>
+            <id>Artifactory</id>
             <name>Artifactory-releases</name>
             <url>http://localhost:8080/artifactory/P2-REPOSITORY-releases-local</url>
 	  </repository>
