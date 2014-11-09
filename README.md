@@ -9,11 +9,11 @@
    2. Create a new virtual Artifactory P2 repository
       Add to it the following urls:
 
-      http://p2-dev.pdt-extensions.org/
-      https://hudson.eclipse.org/hudson/job/dltk-nightly/lastSuccessfulBuild/artifact/org.eclipse.dltk.releng/build/update.site/target/site/
-      http://download.eclipse.org/releases/luna
-      http://download.eclipse.org/tools/pdt/updates/3.3-nightly/
-      http://download.eclipse.org/tools/orbit/downloads/drops/R20130827064939/repository/
+      - http://p2-dev.pdt-extensions.org/
+      - https://hudson.eclipse.org/hudson/job/dltk-nightly/lastSuccessfulBuild/artifact/org.eclipse.dltk.releng/build/update.site/target/site/
+      - http://download.eclipse.org/releases/luna
+      - http://download.eclipse.org/tools/pdt/updates/3.3-nightly/
+      - http://download.eclipse.org/tools/orbit/downloads/drops/R20130827064939/repository/
 
       These are the repositories which contain the dependecies.
       Make sure to add all the urls.
